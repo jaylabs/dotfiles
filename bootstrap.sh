@@ -12,7 +12,7 @@ function _setup_darwin() {
 }
 
 function _setup_zsh() {
-  echo -e "~> zsh\n"
+  echo "~> zsh"
   mkdir -p $HOME/.zsh
   cp -R zsh/{*.zsh,plugins} $HOME/.zsh/
   cp -R zsh/zshrc $HOME/.zshrc
@@ -22,9 +22,6 @@ function _setup_zsh() {
   cp -R git/* $HOME/.git
   cp -R git/.gitconfig $HOME/.gitconfig
   cp -R git/.gitconfig.lib $HOME/.gitconfig.lib
-
-#  echo "~> antibody plugin"
-#  sudo dnf install https://github.com/getantibody/antibody/releases/download/v6.1.1/antibody_6.1.1_linux_amd64.rpm
 }
 
 _setup_darwin
