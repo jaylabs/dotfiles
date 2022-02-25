@@ -1,3 +1,7 @@
+function k8s-off(){
+  RPROMPT=''
+}
+
 alias k="kubectl"
 alias kx="kubectx"
 alias kn="kubens"
